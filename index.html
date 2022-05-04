@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <h1>CALCULADORA</h1>
+        <p>Debes ingresar los dos números a operar y también debe ingresar el tipo de operación <br>
+            El programa debe realizar la operación indicada con los dos números ingresados. <br>
+            En el caso de que ingrese una operación que no es ninguna de las operaciones ofrecidas <br>
+             se muestra el mensaje “Esa operación no  se puede realizar, ingrese nuevamente los datos”. <br> </p>
+        <form id="calculadora" method="post" ></form>
+        <input type="number" id="valor1" placeholder="escribe un número">
+        <button onclick="limpiar()"> Limpiar</button>
+        <br><br>
+        <input type="number" id="valor2" placeholder="escribe otro número">
+        <br><br>
+        <button type="button" onclick="sumar()">+</button>
+        <button type="button" onclick="restar()">-</button>
+        <button type="button" onclick="multiplicar()">*</button>
+        <button type="button" onclick="dividir()">/</button>
+        <p>El resultado es <span id="resultado"></span></p>
+
+    </section>
+    <script src="NocionesBasicas.js"></script>
+    <script src="SentenciasCondicionales.js"></script>
+    <script src="BuclesIteraciones.js"></script>
+</body>
+</html>
